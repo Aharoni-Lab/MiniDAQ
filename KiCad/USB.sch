@@ -1377,17 +1377,6 @@ EndData
 $EndBitmap
 $Comp
 L .Device:LED_Small_ALT D?
-U 1 1 5F0ABC4B
-P 9300 5325
-F 0 "D?" V 9346 5257 50  0000 R CNN
-F 1 "LED_Small_ALT" V 9255 5257 50  0000 R CNN
-F 2 "" V 9300 5325 50  0001 C CNN
-F 3 "~" V 9300 5325 50  0001 C CNN
-	1    9300 5325
-	0    -1   -1   0   
-$EndComp
-$Comp
-L .Device:LED_Small_ALT D?
 U 1 1 5F0AC61D
 P 10725 5250
 F 0 "D?" V 10771 5182 50  0000 R CNN
@@ -1396,17 +1385,6 @@ F 2 "" V 10725 5250 50  0001 C CNN
 F 3 "~" V 10725 5250 50  0001 C CNN
 	1    10725 5250
 	0    -1   -1   0   
-$EndComp
-$Comp
-L .Transistor:MMBT3904LP-7B Q?
-U 1 1 5F0ACAF2
-P 9200 5850
-F 0 "Q?" H 9391 5896 50  0000 L CNN
-F 1 "MMBT3904LP-7B" H 9391 5805 50  0000 L CNN
-F 2 ".Transistor:TRXDFN3_101X61X53L25X15N" H 9400 5775 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31835.pdf" H 9200 5850 50  0001 L CNN
-	1    9200 5850
-	1    0    0    -1  
 $EndComp
 $Comp
 L .Transistor:MMBT3904LP-7B Q?
