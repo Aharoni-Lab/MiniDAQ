@@ -367,7 +367,7 @@ Wire Notes Line
 	3840 2065 830  2065
 Wire Notes Line
 	830  2065 830  860 
-Text Notes 815  840  0    50   ~ 0
+Text Notes 815  840  0    118  ~ 0
 Power over coax
 Wire Notes Line
 	845  2590 3265 2590
@@ -377,137 +377,141 @@ Wire Notes Line
 	3265 3850 845  3850
 Wire Notes Line
 	845  3850 845  2590
-Text Notes 835  2500 0    50   ~ 0
-5V to 1V2 voltage regulator
+Text Notes 835  2500 0    118  ~ 0
+5V to 1V2 Voltage regulator
 $Comp
 L .Regulator_Linear:NCP690MN50T2G(5V) U?
 U 1 1 5F458878
-P 6020 3525
-F 0 "U?" H 6020 4280 50  0000 C CNN
-F 1 "NCP690MN18T2G" H 6020 4189 50  0000 C CNN
-F 2 ".Connector:NCP692MN50T2G" H 6020 3925 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NCP690-D.PDF" H 6020 3925 50  0001 C CNN
-F 4 "Linear Voltage Regulator IC 1 Output 1V8 1A" H 6020 4098 50  0000 C CNN "Description"
-	1    6020 3525
+P 2100 5125
+F 0 "U?" H 2100 5880 50  0000 C CNN
+F 1 "NCP692MN18T2G" H 2100 5789 50  0000 C CNN
+F 2 ".Connector:NCP692MN50T2G" H 2100 5525 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NCP690-D.PDF" H 2100 5525 50  0001 C CNN
+F 4 "Linear Voltage Regulator IC 1 Output 1V8 1A" H 2100 5698 50  0000 C CNN "Description"
+	1    2100 5125
 	1    0    0    -1  
 $EndComp
 $Comp
 L .Device:C_Small C?
 U 1 1 5F4598DA
-P 4885 3325
-F 0 "C?" H 4977 3371 50  0000 L CNN
-F 1 "1uF" H 4977 3280 50  0000 L CNN
-F 2 ".Capacitor:C_0402_1005Metric_L" H 4885 3325 50  0001 C CNN
-F 3 "~" H 4885 3325 50  0001 C CNN
-	1    4885 3325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4885 3425 4885 3475
-$Comp
-L power:GND #PWR?
-U 1 1 5F4598E1
-P 4885 3475
-F 0 "#PWR?" H 4885 3225 50  0001 C CNN
-F 1 "GND" H 4890 3302 50  0000 C CNN
-F 2 "" H 4885 3475 50  0001 C CNN
-F 3 "" H 4885 3475 50  0001 C CNN
-	1    4885 3475
+P 975 4950
+F 0 "C?" H 1067 4996 50  0000 L CNN
+F 1 "1uF" H 1067 4905 50  0000 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 975 4950 50  0001 C CNN
+F 3 "~" H 975 4950 50  0001 C CNN
+	1    975  4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L .Device:C_Small C?
 U 1 1 5F45A53D
-P 7085 3405
-F 0 "C?" H 7177 3451 50  0000 L CNN
-F 1 "22uF" H 7177 3360 50  0000 L CNN
-F 2 ".Capacitor:C_0402_1005Metric_L" H 7085 3405 50  0001 C CNN
-F 3 "~" H 7085 3405 50  0001 C CNN
-	1    7085 3405
+P 3150 4950
+F 0 "C?" H 3242 4996 50  0000 L CNN
+F 1 "1uF" H 3242 4905 50  0000 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 3150 4950 50  0001 C CNN
+F 3 "~" H 3150 4950 50  0001 C CNN
+	1    3150 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7085 3505 7085 3555
 $Comp
 L power:GND #PWR?
 U 1 1 5F45A544
-P 7085 3555
-F 0 "#PWR?" H 7085 3305 50  0001 C CNN
-F 1 "GND" H 7090 3382 50  0000 C CNN
-F 2 "" H 7085 3555 50  0001 C CNN
-F 3 "" H 7085 3555 50  0001 C CNN
-	1    7085 3555
+P 3150 5225
+F 0 "#PWR?" H 3150 4975 50  0001 C CNN
+F 1 "GND" H 3155 5052 50  0000 C CNN
+F 2 "" H 3150 5225 50  0001 C CNN
+F 3 "" H 3150 5225 50  0001 C CNN
+	1    3150 5225
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5420 3675
-Wire Wire Line
-	5420 3225 5290 3225
-Wire Wire Line
-	5290 3225 5290 3425
-Wire Wire Line
-	5290 3425 5420 3425
-$Comp
-L power:+5V #PWR?
-U 1 1 5F45D04F
-P 4885 3115
-F 0 "#PWR?" H 4885 2965 50  0001 C CNN
-F 1 "+5V" H 4900 3288 50  0000 C CNN
-F 2 "" H 4885 3115 50  0001 C CNN
-F 3 "" H 4885 3115 50  0001 C CNN
-	1    4885 3115
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5290 3225 4885 3225
-Wire Wire Line
-	4885 3115 4885 3225
-Connection ~ 5290 3225
-Connection ~ 4885 3225
-Wire Wire Line
-	5870 3925 5870 4070
-Wire Wire Line
-	5870 4070 6025 4070
-Wire Wire Line
-	6170 4070 6170 3925
-$Comp
-L power:GND #PWR?
-U 1 1 5F460668
-P 6025 4090
-F 0 "#PWR?" H 6025 3840 50  0001 C CNN
-F 1 "GND" H 6030 3917 50  0000 C CNN
-F 2 "" H 6025 4090 50  0001 C CNN
-F 3 "" H 6025 4090 50  0001 C CNN
-	1    6025 4090
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6025 4090 6025 4070
-Connection ~ 6025 4070
-Wire Wire Line
-	6025 4070 6170 4070
-Wire Wire Line
-	6620 3225 6755 3225
-Wire Wire Line
-	6755 3225 6755 3425
-Wire Wire Line
-	6755 3425 6620 3425
-Wire Wire Line
-	6755 3225 7085 3225
-Wire Wire Line
-	7085 3225 7085 3305
-Connection ~ 6755 3225
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F46855A
-P 7085 3115
-F 0 "#PWR?" H 7085 2965 50  0001 C CNN
-F 1 "+1V8" H 7100 3288 50  0000 C CNN
-F 2 "" H 7085 3115 50  0001 C CNN
-F 3 "" H 7085 3115 50  0001 C CNN
-	1    7085 3115
+P 3150 4725
+F 0 "#PWR?" H 3150 4575 50  0001 C CNN
+F 1 "+1V8" H 3165 4898 50  0000 C CNN
+F 2 "" H 3150 4725 50  0001 C CNN
+F 3 "" H 3150 4725 50  0001 C CNN
+	1    3150 4725
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3540 4275 3540 5975
+Wire Notes Line
+	3540 5975 800  5975
+Wire Notes Line
+	800  5975 800  4275
+Wire Notes Line
+	800  4275 3540 4275
+Text Notes 790  4225 0    118  ~ 0
+5V to 1V8 Voltage regulator
+$Comp
+L power:+5V #PWR?
+U 1 1 5F45D04F
+P 975 4725
+F 0 "#PWR?" H 975 4575 50  0001 C CNN
+F 1 "+5V" H 990 4898 50  0000 C CNN
+F 2 "" H 975 4725 50  0001 C CNN
+F 3 "" H 975 4725 50  0001 C CNN
+	1    975  4725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7085 3115 7085 3225
-Connection ~ 7085 3225
+	975  4725 975  4825
+Wire Wire Line
+	1500 4825 1425 4825
+Connection ~ 975  4825
+Wire Wire Line
+	975  4825 975  4850
+Wire Wire Line
+	1425 4825 1425 5025
+Wire Wire Line
+	1425 5025 1500 5025
+Connection ~ 1425 4825
+Wire Wire Line
+	1425 4825 975  4825
+Wire Wire Line
+	1425 5025 1425 5275
+Wire Wire Line
+	1425 5275 1500 5275
+Connection ~ 1425 5025
+Wire Wire Line
+	1950 5525 1950 5650
+Wire Wire Line
+	1950 5650 975  5650
+Wire Wire Line
+	975  5650 975  5050
+Wire Wire Line
+	2250 5525 2250 5650
+Wire Wire Line
+	2250 5650 1950 5650
+Connection ~ 1950 5650
+Wire Wire Line
+	3150 4725 3150 4825
+Wire Wire Line
+	2700 4825 2825 4825
+Connection ~ 3150 4825
+Wire Wire Line
+	3150 4825 3150 4850
+Wire Wire Line
+	3150 5050 3150 5225
+Wire Wire Line
+	2700 5025 2825 5025
+Wire Wire Line
+	2825 5025 2825 4825
+Connection ~ 2825 4825
+Wire Wire Line
+	2825 4825 3150 4825
+$Comp
+L power:GND #PWR?
+U 1 1 5F370570
+P 2250 5650
+F 0 "#PWR?" H 2250 5400 50  0001 C CNN
+F 1 "GND" H 2255 5477 50  0000 C CNN
+F 2 "" H 2250 5650 50  0001 C CNN
+F 3 "" H 2250 5650 50  0001 C CNN
+	1    2250 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 5650
 $EndSCHEMATC
