@@ -1356,51 +1356,29 @@ BD 4B 0E 2E 56 A4 B7 F5 77 36 12 F9 63 31 FD B4 7F 76 A8 FC 0B 1A 8E FC 97 A1 21
 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L Connector:USB3_B J?
-U 1 1 5F1ACF1A
-P 1100 1325
-F 0 "J?" H 1157 2042 50  0000 C CNN
-F 1 "USB3_B" H 1157 1951 50  0000 C CNN
-F 2 "" H 1250 1425 50  0001 C CNN
-F 3 "~" H 1250 1425 50  0001 C CNN
-	1    1100 1325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1600 925  2175 925 
+	1475 1075 2050 1075
 Wire Wire Line
-	1100 2025 1100 2050
+	1475 1175 2050 1175
 Wire Wire Line
-	1000 2025 1000 2050
+	1475 1475 2050 1475
 Wire Wire Line
-	1000 2050 1100 2050
-Connection ~ 1100 2050
+	1475 1575 2050 1575
 Wire Wire Line
-	1100 2050 1100 2125
+	1475 1725 2050 1725
 Wire Wire Line
-	1600 1125 2175 1125
-Wire Wire Line
-	1600 1225 2175 1225
-Wire Wire Line
-	1600 1425 2175 1425
-Wire Wire Line
-	1600 1525 2175 1525
-Wire Wire Line
-	1600 1725 2175 1725
-Wire Wire Line
-	1600 1825 2175 1825
-Text Label 1800 1125 0    50   ~ 0
+	1475 1825 2050 1825
+Text Label 1675 1075 0    50   ~ 0
 SSDM
-Text Label 1800 1225 0    50   ~ 0
+Text Label 1675 1175 0    50   ~ 0
 SSDP
-Text Label 1800 1425 0    50   ~ 0
+Text Label 1675 1475 0    50   ~ 0
 SS_TX_M
-Text Label 1800 1525 0    50   ~ 0
+Text Label 1675 1575 0    50   ~ 0
 SS_TX_P
-Text Label 1775 1825 0    50   ~ 0
+Text Label 1675 1725 0    50   ~ 0
 SS_RX_P
-Text Label 1775 1725 0    50   ~ 0
+Text Label 1675 1825 0    50   ~ 0
 SS_RX_M
 $Comp
 L .Device:L_Small L?
@@ -1434,17 +1412,6 @@ F 2 ".Capacitor:C_0402_1005Metric_L" H 1575 2425 50  0001 C CNN
 F 3 "~" H 1575 2425 50  0001 C CNN
 	1    1575 2425
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F1B77ED
-P 1100 2125
-F 0 "#PWR?" H 1100 1875 50  0001 C CNN
-F 1 "GND" H 1105 1952 50  0000 C CNN
-F 2 "" H 1100 2125 50  0001 C CNN
-F 3 "" H 1100 2125 50  0001 C CNN
-	1    1100 2125
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -2298,17 +2265,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/NCP360-D.PDF" H 4400 1325 50  0001 C 
 $EndComp
 $Comp
 L .Interface:CYUSB3014 U?
-U 1 1 5F0B08A2
-P 7175 1950
-F 0 "U?" H 7475 3200 50  0000 L CNN
-F 1 "CYUSB3014" H 7275 1900 50  0000 L CNN
-F 2 ".Interface:CYUSB3014-BZXI" H 7162 5517 50  0001 C CNN
-F 3 "https://www.cypress.com/file/140296/download" H 7144 3573 50  0001 C CNN
-	1    7175 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L .Interface:CYUSB3014 U?
 U 2 1 5F0B1966
 P 1125 4050
 F 0 "U?" H 1450 5300 50  0000 C CNN
@@ -2550,14 +2506,9 @@ Wire Notes Line
 Wire Notes Line
 	500  2575 500  525 
 Wire Wire Line
-	900  2425 1425 2425
-Wire Wire Line
-	900  2025 900  2425
-Wire Wire Line
 	1425 2425 1425 2200
 Wire Wire Line
 	1425 2200 1475 2200
-Connection ~ 1425 2425
 Wire Wire Line
 	1425 2425 1475 2425
 Wire Wire Line
@@ -3329,15 +3280,6 @@ Wire Wire Line
 	3625 925  4050 925 
 Wire Wire Line
 	3625 1180 3625 1220
-NoConn ~ 6675 1450
-Wire Wire Line
-	6475 1550 6675 1550
-Wire Wire Line
-	6475 1650 6675 1650
-Wire Wire Line
-	6475 950  6675 950 
-Wire Wire Line
-	6475 1050 6675 1050
 Wire Wire Line
 	9400 950  9525 950 
 Connection ~ 9400 950 
@@ -3381,6 +3323,73 @@ Wire Wire Line
 	1625 6300 1525 6300
 Wire Wire Line
 	1525 6400 1625 6400
+$Comp
+L .Connector:USB3_micro-B U?
+U 1 1 5F0D706F
+P 1325 775
+F 0 "U?" H 1158 850 50  0000 C CNN
+F 1 "USB3_micro-B" H 1158 759 50  0000 C CNN
+F 2 ".Connector:USB3_micro_B_ZX360D-B-10P(30)" H 1325 775 50  0001 C CNN
+F 3 "file:///C:/Users/DBAharoni/Downloads/ZX360_CL0242-0500-1-30_2d.pdf" H 1325 775 50  0001 C CNN
+	1    1325 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1475 925  2175 925 
+$Comp
+L power:GND #PWR?
+U 1 1 5F1B77ED
+P 1175 2325
+F 0 "#PWR?" H 1175 2075 50  0001 C CNN
+F 1 "GND" H 1180 2152 50  0000 C CNN
+F 2 "" H 1175 2325 50  0001 C CNN
+F 3 "" H 1175 2325 50  0001 C CNN
+	1    1175 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1175 2250 1175 2325
+Connection ~ 1175 2250
+Wire Wire Line
+	1075 2250 1175 2250
+Wire Wire Line
+	1075 2225 1075 2250
+Wire Wire Line
+	1175 2225 1175 2250
+Wire Wire Line
+	925  2225 925  2550
+Wire Wire Line
+	925  2550 1425 2550
+Wire Wire Line
+	1425 2550 1425 2425
+Connection ~ 1425 2425
+Wire Wire Line
+	1475 1325 2050 1325
+Text Label 1675 1325 0    50   ~ 0
+OTG_ID
+Text Label 6300 1450 0    50   ~ 0
+OTG_ID
+Wire Wire Line
+	6300 1450 6675 1450
+$Comp
+L .Interface:CYUSB3014 U?
+U 1 1 5F0B08A2
+P 7175 1950
+F 0 "U?" H 7475 3200 50  0000 L CNN
+F 1 "CYUSB3014" H 7275 1900 50  0000 L CNN
+F 2 ".Interface:CYUSB3014-BZXI" H 7162 5517 50  0001 C CNN
+F 3 "https://www.cypress.com/file/140296/download" H 7144 3573 50  0001 C CNN
+	1    7175 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1650 6675 1650
+Wire Wire Line
+	6300 1550 6675 1550
+Wire Wire Line
+	6300 1050 6675 1050
+Wire Wire Line
+	6300 950  6675 950 
 Wire Bus Line
 	6950 4125 6950 4825
 $EndSCHEMATC
