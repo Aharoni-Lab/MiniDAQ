@@ -160,12 +160,12 @@ Connection ~ 3265 1300
 $Comp
 L power:+5V #PWR?
 U 1 1 5F0E5F55
-P 3565 1300
-F 0 "#PWR?" H 3565 1150 50  0001 C CNN
-F 1 "+5V" H 3580 1473 50  0000 C CNN
-F 2 "" H 3565 1300 50  0001 C CNN
-F 3 "" H 3565 1300 50  0001 C CNN
-	1    3565 1300
+P 3565 1200
+F 0 "#PWR?" H 3565 1050 50  0001 C CNN
+F 1 "+5V" H 3580 1373 50  0000 C CNN
+F 2 "" H 3565 1200 50  0001 C CNN
+F 3 "" H 3565 1200 50  0001 C CNN
+	1    3565 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -370,12 +370,6 @@ Wire Notes Line
 Text Notes 815  840  0    118  ~ 0
 Power over coax
 Wire Notes Line
-	845  2590 3265 2590
-Wire Notes Line
-	3265 2590 3265 3850
-Wire Notes Line
-	3265 3850 845  3850
-Wire Notes Line
 	845  3850 845  2590
 Text Notes 835  2500 0    118  ~ 0
 5V to 1V2 Voltage regulator
@@ -487,12 +481,7 @@ Wire Wire Line
 	2250 5650 1950 5650
 Connection ~ 1950 5650
 Wire Wire Line
-	3150 4725 3150 4825
-Wire Wire Line
 	2700 4825 2825 4825
-Connection ~ 3150 4825
-Wire Wire Line
-	3150 4825 3150 4850
 Wire Wire Line
 	3150 5050 3150 5225
 Wire Wire Line
@@ -514,4 +503,31 @@ F 3 "" H 2250 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2250 5650
+Text HLabel 3085 3030 2    50   Input ~ 0
+1V2
+Wire Wire Line
+	3085 3030 3025 3030
+Connection ~ 3025 3030
+Wire Notes Line
+	3340 2590 3340 3850
+Wire Notes Line
+	845  2590 3340 2590
+Wire Notes Line
+	845  3850 3340 3850
+Text HLabel 3250 4825 2    50   Input ~ 0
+1V8
+Wire Wire Line
+	3150 4725 3150 4825
+Wire Wire Line
+	3250 4825 3150 4825
+Connection ~ 3150 4825
+Wire Wire Line
+	3150 4825 3150 4850
+Text HLabel 3640 1300 2    50   Input ~ 0
+5v
+Wire Wire Line
+	3640 1300 3565 1300
+Connection ~ 3565 1300
+Wire Wire Line
+	3565 1200 3565 1300
 $EndSCHEMATC
