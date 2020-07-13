@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -282,17 +282,6 @@ Wire Wire Line
 Wire Wire Line
 	3025 3030 3025 2955
 Connection ~ 2850 3030
-$Comp
-L power:+1V2 #PWR?
-U 1 1 5F2F7723
-P 3025 2955
-F 0 "#PWR?" H 3025 2805 50  0001 C CNN
-F 1 "+1V2" H 3040 3128 50  0000 C CNN
-F 2 "" H 3025 2955 50  0001 C CNN
-F 3 "" H 3025 2955 50  0001 C CNN
-	1    3025 2955
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 3380 2850 3430
 $Comp
@@ -503,31 +492,28 @@ F 3 "" H 2250 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2250 5650
-Text HLabel 3085 3030 2    50   Input ~ 0
-1V2
-Wire Wire Line
-	3085 3030 3025 3030
-Connection ~ 3025 3030
 Wire Notes Line
 	3340 2590 3340 3850
 Wire Notes Line
 	845  2590 3340 2590
 Wire Notes Line
 	845  3850 3340 3850
-Text HLabel 3250 4825 2    50   Input ~ 0
-1V8
 Wire Wire Line
 	3150 4725 3150 4825
-Wire Wire Line
-	3250 4825 3150 4825
 Connection ~ 3150 4825
 Wire Wire Line
 	3150 4825 3150 4850
-Text HLabel 3640 1300 2    50   Input ~ 0
-5v
-Wire Wire Line
-	3640 1300 3565 1300
-Connection ~ 3565 1300
 Wire Wire Line
 	3565 1200 3565 1300
+$Comp
+L power:+1V2 #PWR?
+U 1 1 5F2F7723
+P 3025 2955
+F 0 "#PWR?" H 3025 2805 50  0001 C CNN
+F 1 "+1V2" H 3040 3128 50  0000 C CNN
+F 2 "" H 3025 2955 50  0001 C CNN
+F 3 "" H 3025 2955 50  0001 C CNN
+	1    3025 2955
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

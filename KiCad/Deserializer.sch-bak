@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -326,8 +326,6 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds31835.pdf" H 1875 6695 50  0001 
 $EndComp
 Wire Wire Line
 	1975 6270 1975 6495
-Wire Wire Line
-	1975 5795 1975 5730
 Wire Wire Line
 	1675 6695 1550 6695
 Wire Wire Line
@@ -1266,18 +1264,8 @@ Text Label 3250 5075 0    50   ~ 0
 LOCK
 Text Notes 3225 1150 0    394  ~ 0
 CHECK EVERYTHING!
-Text HLabel 1910 5730 0    50   Input ~ 0
-5V
 Wire Wire Line
-	1910 5730 1975 5730
-Connection ~ 1975 5730
-Wire Wire Line
-	1975 5730 1975 5695
-Text HLabel 8985 2375 0    50   Input ~ 0
-1V8
-Wire Wire Line
-	8985 2375 9075 2375
+	1975 5695 1975 5795
 Wire Bus Line
 	6250 3125 6250 4225
-Connection ~ 9075 2375
 $EndSCHEMATC

@@ -105,17 +105,6 @@ F 3 "~" H 6350 6925 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L .Device:C_Small C?
-U 1 1 5F09E5E7
-P 6950 -300
-F 0 "C?" H 7042 -254 50  0000 L CNN
-F 1 "22uF" H 7042 -345 50  0000 L CNN
-F 2 ".Capacitor:C_0402_1005Metric_L" H 6950 -300 50  0001 C CNN
-F 3 "~" H 6950 -300 50  0001 C CNN
-	1    6950 -300
-	1    0    0    -1  
-$EndComp
-$Comp
 L .Device:R_Small_US R?
 U 1 1 5F0A03BD
 P 2525 5125
@@ -1538,17 +1527,6 @@ FSLC1
 Text Label 1625 3450 0    50   ~ 0
 FSLC2
 $Comp
-L .Device:C_Small C?
-U 1 1 5F1CF522
-P 7325 -300
-F 0 "C?" H 7417 -254 50  0000 L CNN
-F 1 "0.1uF" H 7417 -345 50  0000 L CNN
-F 2 ".Capacitor:C_0402_1005Metric_L" H 7325 -300 50  0001 C CNN
-F 3 "~" H 7325 -300 50  0001 C CNN
-	1    7325 -300
-	1    0    0    -1  
-$EndComp
-$Comp
 L .Inductor:BLM18PG471SN1D L?
 U 1 1 5F1CF90B
 P 8745 950
@@ -1563,8 +1541,6 @@ F 5 "0603" H 8895 700 50  0001 C CNN "Size"
 $EndComp
 Wire Wire Line
 	8645 950  8295 950 
-Wire Wire Line
-	8295 950  8295 855 
 $Comp
 L power:+1V2 #PWR?
 U 1 1 5F1D28B8
@@ -1785,8 +1761,6 @@ Wire Wire Line
 Connection ~ 9520 2625
 Text Label 9610 2275 0    50   ~ 0
 U3TXVDDQ
-Wire Wire Line
-	10170 950  10170 825 
 $Comp
 L .Device:C_Small C?
 U 1 1 5F1EC2D1
@@ -1836,17 +1810,6 @@ $EndComp
 Wire Wire Line
 	10845 1300 10845 1225
 Connection ~ 10845 1300
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5F1F2311
-P 10170 800
-F 0 "#PWR?" H 10170 650 50  0001 C CNN
-F 1 "+1V8" H 10185 973 50  0000 C CNN
-F 2 "" H 10170 800 50  0001 C CNN
-F 3 "" H 10170 800 50  0001 C CNN
-	1    10170 800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10170 1600 10170 1450
 $Comp
@@ -2197,17 +2160,6 @@ F 1 "+1V8" H 8310 3023 50  0000 C CNN
 F 2 "" H 8295 2850 50  0001 C CNN
 F 3 "" H 8295 2850 50  0001 C CNN
 	1    8295 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L .Device:C_Small C?
-U 1 1 5F23D2C1
-P 7775 -300
-F 0 "C?" H 7867 -254 50  0000 L CNN
-F 1 "0.1uF" H 7867 -345 50  0000 L CNN
-F 2 ".Capacitor:C_0402_1005Metric_L" H 7775 -300 50  0001 C CNN
-F 3 "~" H 7775 -300 50  0001 C CNN
-	1    7775 -300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3390,20 +3342,21 @@ Wire Wire Line
 	6300 1050 6675 1050
 Wire Wire Line
 	6300 950  6675 950 
-Text HLabel 10320 825  2    50   Input ~ 0
-1V8
 Wire Wire Line
-	10320 825  10170 825 
-Connection ~ 10170 825 
-Wire Wire Line
-	10170 825  10170 800 
-Text HLabel 8155 855  0    50   Input ~ 0
-1V2
-Wire Wire Line
-	8155 855  8295 855 
+	8295 800  8295 950 
 Wire Bus Line
 	6950 4125 6950 4825
-Connection ~ 8295 855 
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5F1F2311
+P 10170 800
+F 0 "#PWR?" H 10170 650 50  0001 C CNN
+F 1 "+1V8" H 10185 973 50  0000 C CNN
+F 2 "" H 10170 800 50  0001 C CNN
+F 3 "" H 10170 800 50  0001 C CNN
+	1    10170 800 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8295 855  8295 800 
+	10170 800  10170 950 
 $EndSCHEMATC
