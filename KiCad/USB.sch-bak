@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 3 4
 Title ""
@@ -169,10 +169,6 @@ F 3 "" H 2525 4725 50  0001 C CNN
 	1    2525 4725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1525 6300 1850 6300
-Wire Wire Line
-	1525 6400 1850 6400
 Text Label 1625 6300 0    50   ~ 0
 SCL
 Text Label 1625 6400 0    50   ~ 0
@@ -1664,9 +1660,6 @@ Wire Wire Line
 Connection ~ 9400 1300
 Text Label 9525 950  0    50   ~ 0
 AVDD
-Wire Wire Line
-	9400 950  9700 950 
-Connection ~ 9400 950 
 $Comp
 L .Inductor:BLM18PG471SN1D L?
 U 1 1 5F1E518E
@@ -1744,11 +1737,8 @@ $EndComp
 Wire Wire Line
 	9400 2000 9400 1925
 Connection ~ 9400 2000
-Text Label 9450 1650 0    50   ~ 0
+Text Label 9510 1650 0    50   ~ 0
 U3RXVDDQ
-Wire Wire Line
-	9400 1650 9700 1650
-Connection ~ 9400 1650
 $Comp
 L .Inductor:BLM18PG471SN1D L?
 U 1 1 5F1E85D1
@@ -1826,11 +1816,8 @@ $EndComp
 Wire Wire Line
 	9400 2625 9400 2550
 Connection ~ 9400 2625
-Text Label 9450 2275 0    50   ~ 0
+Text Label 9490 2275 0    50   ~ 0
 U3TXVDDQ
-Wire Wire Line
-	9400 2275 9700 2275
-Connection ~ 9400 2275
 Wire Wire Line
 	10050 950  10050 800 
 $Comp
@@ -1882,11 +1869,6 @@ $EndComp
 Wire Wire Line
 	10725 1300 10725 1225
 Connection ~ 10725 1300
-Text Label 10850 950  0    50   ~ 0
-VIO5
-Wire Wire Line
-	10725 950  11025 950 
-Connection ~ 10725 950 
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F1F2311
@@ -1951,9 +1933,6 @@ Wire Wire Line
 Connection ~ 10725 1950
 Text Label 10850 1600 0    50   ~ 0
 VIO2
-Wire Wire Line
-	10725 1600 11025 1600
-Connection ~ 10725 1600
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F1FAA60
@@ -2018,9 +1997,6 @@ Wire Wire Line
 Connection ~ 10725 2625
 Text Label 10850 2275 0    50   ~ 0
 VIO3
-Wire Wire Line
-	10725 2275 11025 2275
-Connection ~ 10725 2275
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F201D06
@@ -2085,9 +2061,6 @@ Wire Wire Line
 Connection ~ 10725 3350
 Text Label 10850 3000 0    50   ~ 0
 VIO4
-Wire Wire Line
-	10725 3000 11025 3000
-Connection ~ 10725 3000
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F205920
@@ -2151,9 +2124,6 @@ Wire Wire Line
 Connection ~ 10725 4225
 Text Label 10850 3875 0    50   ~ 0
 VIO1
-Wire Wire Line
-	10725 3875 11025 3875
-Connection ~ 10725 3875
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F2099CE
@@ -2251,9 +2221,6 @@ Wire Wire Line
 Connection ~ 9400 3350
 Text Label 9475 3000 0    50   ~ 0
 CVDDQ
-Wire Wire Line
-	9400 3000 9700 3000
-Connection ~ 9400 3000
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5F2289BA
@@ -2310,12 +2277,12 @@ $EndComp
 $Comp
 L .Interface:SP3010-04UTG U?
 U 1 1 5F2EC5F5
-P 3125 1700
-F 0 "U?" H 3100 2125 50  0000 C CNN
-F 1 "SP3010-04UTG" H 3100 2034 50  0000 C CNN
-F 2 ".Package_QFN:uDFN-10" H 3025 1900 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sp3010_datasheet.pdf.pdf" H 3025 1900 50  0001 C CNN
-	1    3125 1700
+P 3180 1910
+F 0 "U?" H 3155 2335 50  0000 C CNN
+F 1 "SP3010-04UTG" H 3155 2244 50  0000 C CNN
+F 2 ".Package_QFN:uDFN-10" H 3080 2110 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sp3010_datasheet.pdf.pdf" H 3080 2110 50  0001 C CNN
+	1    3180 1910
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2376,51 +2343,51 @@ $EndComp
 $Comp
 L .Interface:CYUSB3014 U?
 U 6 1 5F0BA739
-P 5125 11725
-F 0 "U?" H 5155 15135 50  0000 C CNN
-F 1 "CYUSB3014" H 5155 15044 50  0000 C CNN
-F 2 ".Interface:CYUSB3014-BZXI" H 5112 15292 50  0001 C CNN
-F 3 "https://www.cypress.com/file/140296/download" H 5094 13348 50  0001 C CNN
-	6    5125 11725
+P 5280 11325
+F 0 "U?" H 5310 14735 50  0000 C CNN
+F 1 "CYUSB3014" H 5310 14644 50  0000 C CNN
+F 2 ".Interface:CYUSB3014-BZXI" H 5267 14892 50  0001 C CNN
+F 3 "https://www.cypress.com/file/140296/download" H 5249 12948 50  0001 C CNN
+	6    5280 11325
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2825 1900 2775 1900
+	2880 2110 2830 2110
 Wire Wire Line
-	2775 1900 2775 2025
+	2830 2110 2830 2235
 Wire Wire Line
-	2775 2025 3450 2025
+	2830 2235 3505 2235
 Wire Wire Line
-	3450 2025 3450 1900
+	3505 2235 3505 2110
 Wire Wire Line
-	3450 1900 3375 1900
+	3505 2110 3430 2110
 $Comp
 L power:GND #PWR?
 U 1 1 5F0EF3DA
-P 3450 2025
-F 0 "#PWR?" H 3450 1775 50  0001 C CNN
-F 1 "GND" H 3455 1852 50  0000 C CNN
-F 2 "" H 3450 2025 50  0001 C CNN
-F 3 "" H 3450 2025 50  0001 C CNN
-	1    3450 2025
+P 3505 2235
+F 0 "#PWR?" H 3505 1985 50  0001 C CNN
+F 1 "GND" H 3510 2062 50  0000 C CNN
+F 2 "" H 3505 2235 50  0001 C CNN
+F 3 "" H 3505 2235 50  0001 C CNN
+	1    3505 2235
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 2025
+Connection ~ 3505 2235
 Wire Wire Line
-	2825 1500 2500 1500
+	2880 1710 2555 1710
 Wire Wire Line
-	2825 1600 2500 1600
+	2880 1810 2555 1810
 Wire Wire Line
-	2825 1700 2500 1700
+	2880 1910 2555 1910
 Wire Wire Line
-	2825 1800 2500 1800
-Text Label 2500 1500 0    50   ~ 0
+	2880 2010 2555 2010
+Text Label 2555 1710 0    50   ~ 0
 SS_TX_M
-Text Label 2500 1600 0    50   ~ 0
+Text Label 2555 1810 0    50   ~ 0
 SS_TX_P
-Text Label 2500 1700 0    50   ~ 0
+Text Label 2555 1910 0    50   ~ 0
 SS_RX_M
-Text Label 2500 1800 0    50   ~ 0
+Text Label 2555 2010 0    50   ~ 0
 SS_RX_P
 Wire Wire Line
 	4050 1025 3950 1025
@@ -2495,46 +2462,38 @@ F 3 "" H 4450 1400 50  0001 C CNN
 $EndComp
 Connection ~ 4450 1400
 Wire Wire Line
-	3700 1500 3375 1500
+	3755 1710 3430 1710
 Wire Wire Line
-	3700 1600 3375 1600
+	3755 1810 3430 1810
 Wire Wire Line
-	3700 1700 3375 1700
+	3755 1910 3430 1910
 Wire Wire Line
-	3700 1800 3375 1800
-Text Label 3375 1500 0    50   ~ 0
+	3755 2010 3430 2010
+Text Label 3430 1710 0    50   ~ 0
 SS_TX_M
-Text Label 3375 1600 0    50   ~ 0
+Text Label 3430 1810 0    50   ~ 0
 SS_TX_P
-Text Label 3375 1700 0    50   ~ 0
+Text Label 3430 1910 0    50   ~ 0
 SS_RX_M
-Text Label 3375 1800 0    50   ~ 0
+Text Label 3430 2010 0    50   ~ 0
 SS_RX_P
 Wire Wire Line
-	2375 925  4050 925 
-Wire Wire Line
-	6100 1550 6675 1550
-Wire Wire Line
-	6100 1650 6675 1650
+	2375 925  3625 925 
 Wire Wire Line
 	6100 1350 6675 1350
 Wire Wire Line
 	6100 1750 6675 1750
-Wire Wire Line
-	6100 950  6675 950 
-Wire Wire Line
-	6100 1050 6675 1050
-Text Label 6225 1650 0    50   ~ 0
+Text Label 6475 1650 2    50   ~ 0
 SSDM
-Text Label 6225 1550 0    50   ~ 0
+Text Label 6475 1550 2    50   ~ 0
 SSDP
 Text Label 5525 1150 0    50   ~ 0
 SS_TX_M
 Text Label 5525 1250 0    50   ~ 0
 SS_TX_P
-Text Label 6275 1050 0    50   ~ 0
+Text Label 6475 1050 2    50   ~ 0
 SS_RX_P
-Text Label 6275 950  0    50   ~ 0
+Text Label 6475 950  2    50   ~ 0
 SS_RX_M
 $Comp
 L .Device:C_Small C?
@@ -2630,10 +2589,6 @@ Wire Wire Line
 Connection ~ 2300 3350
 Wire Wire Line
 	2300 3350 2300 3450
-Wire Wire Line
-	1625 3150 2025 3150
-Wire Wire Line
-	1625 3250 2025 3250
 Text Label 1675 3150 0    50   ~ 0
 XTAL_IN
 Text Label 1675 3250 0    50   ~ 0
@@ -2897,8 +2852,6 @@ Connection ~ 12025 2100
 Wire Wire Line
 	12025 2000 12025 1900
 Connection ~ 12025 2000
-Wire Wire Line
-	12025 2575 12025 2500
 Text Label 11575 3200 0    50   ~ 0
 U3TXVDDQ
 Text Label 11575 3100 0    50   ~ 0
@@ -3023,8 +2976,6 @@ Text Label 11575 1600 0    50   ~ 0
 VIO3
 Text Label 11575 1500 0    50   ~ 0
 VIO2
-Text Label 11575 1400 0    50   ~ 0
-VIO1
 Wire Wire Line
 	12025 2800 11575 2800
 Wire Wire Line
@@ -3035,12 +2986,10 @@ Wire Wire Line
 	12025 1600 11575 1600
 Wire Wire Line
 	12025 1500 11575 1500
-Wire Wire Line
-	12025 1400 11575 1400
 Text Label 11575 1300 0    50   ~ 0
 VIO1
 Wire Wire Line
-	12025 1300 11575 1300
+	12025 1300 11865 1300
 $Comp
 L .Interface:CYUSB3014 U?
 U 4 1 5F0B69BF
@@ -3298,7 +3247,7 @@ ROUT8
 Text Label 6650 4725 0    50   ~ 0
 ROUT9
 Text Notes 5550 3450 0    50   ~ 0
-Add some solder pads for Escope just incase
+Add some solder pads for Escope just in case
 Entry Wire Line
 	6850 4025 6950 4125
 Entry Wire Line
@@ -3322,21 +3271,116 @@ ROUT[0..11]
 Text Notes 6150 6500 1    50   ~ 0
 Add any GPIO?
 Wire Wire Line
-	5625 11025 6175 11025
+	5780 10625 6330 10625
 Wire Wire Line
-	5625 10925 6175 10925
+	5780 10525 6330 10525
 Wire Wire Line
-	5625 10825 6175 10825
+	5780 10425 6330 10425
 Wire Wire Line
-	5625 10725 6175 10725
-Text Label 5825 10725 0    50   ~ 0
+	5780 10325 6330 10325
+Text Label 5980 10325 0    50   ~ 0
 SPI_SCK
-Text Label 5825 10825 0    50   ~ 0
+Text Label 5980 10425 0    50   ~ 0
 SPI_nCS
-Text Label 5825 10925 0    50   ~ 0
+Text Label 5980 10525 0    50   ~ 0
 SPI_MISO
-Text Label 5825 11025 0    50   ~ 0
+Text Label 5980 10625 0    50   ~ 0
 SPI_MOSI
+Wire Wire Line
+	12025 2500 12025 2600
+NoConn ~ 1850 4925
+NoConn ~ 1850 5025
+NoConn ~ 1850 5125
+NoConn ~ 1850 5225
+NoConn ~ 1850 5325
+NoConn ~ 1850 5425
+Wire Wire Line
+	1625 3150 1675 3150
+Wire Wire Line
+	1625 3250 1675 3250
+NoConn ~ 1625 3550
+NoConn ~ 1625 3650
+$Comp
+L .Device:C_Small C?
+U 1 1 5F20958B
+P 3625 1080
+F 0 "C?" H 3717 1126 50  0000 L CNN
+F 1 "1uF" H 3717 1035 50  0000 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 3625 1080 50  0001 C CNN
+F 3 "~" H 3625 1080 50  0001 C CNN
+	1    3625 1080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F209592
+P 3625 1220
+F 0 "#PWR?" H 3625 970 50  0001 C CNN
+F 1 "GND" H 3630 1047 50  0000 C CNN
+F 2 "" H 3625 1220 50  0001 C CNN
+F 3 "" H 3625 1220 50  0001 C CNN
+	1    3625 1220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 980  3625 925 
+Connection ~ 3625 925 
+Wire Wire Line
+	3625 925  4050 925 
+Wire Wire Line
+	3625 1180 3625 1220
+NoConn ~ 6675 1450
+Wire Wire Line
+	6475 1550 6675 1550
+Wire Wire Line
+	6475 1650 6675 1650
+Wire Wire Line
+	6475 950  6675 950 
+Wire Wire Line
+	6475 1050 6675 1050
+Wire Wire Line
+	9400 950  9525 950 
+Connection ~ 9400 950 
+Wire Wire Line
+	9510 1650 9400 1650
+Connection ~ 9400 1650
+Wire Wire Line
+	9490 2275 9400 2275
+Connection ~ 9400 2275
+Wire Wire Line
+	9475 3000 9400 3000
+Connection ~ 9400 3000
+Text Label 10850 950  0    50   ~ 0
+VIO5
+Wire Wire Line
+	10725 950  10850 950 
+Connection ~ 10725 950 
+Wire Wire Line
+	10725 1600 10850 1600
+Connection ~ 10725 1600
+Wire Wire Line
+	10725 2275 10850 2275
+Connection ~ 10725 2275
+Wire Wire Line
+	10725 3000 10850 3000
+Connection ~ 10725 3000
+Wire Wire Line
+	10725 3875 10850 3875
+Connection ~ 10725 3875
+Text Notes 7130 4580 0    118  ~ 0
+What about ROUT1,ROUT10,ROUT11?
+Wire Wire Line
+	11865 1300 11865 1400
+Wire Wire Line
+	11865 1400 12025 1400
+Connection ~ 11865 1300
+Wire Wire Line
+	11865 1300 11575 1300
+NoConn ~ 13025 2900
+Wire Wire Line
+	1625 6300 1525 6300
+Wire Wire Line
+	1525 6400 1625 6400
 Wire Bus Line
 	6950 4125 6950 4825
 $EndSCHEMATC
