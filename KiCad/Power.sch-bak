@@ -18,9 +18,9 @@ L Connector:Conn_Coaxial J2
 U 1 1 5F097B4C
 P 1190 1300
 F 0 "J2" H 1118 1538 50  0000 C CNN
-F 1 "Conn_Coaxial" H 1118 1447 50  0000 C CNN
-F 2 "" H 1190 1300 50  0001 C CNN
-F 3 " ~" H 1190 1300 50  0001 C CNN
+F 1 "SMA-J-P-H-ST-EM1" H 1118 1447 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount" H 1190 1300 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/sma.pdf" H 1190 1300 50  0001 C CNN
 	1    1190 1300
 	-1   0    0    -1  
 $EndComp
@@ -368,7 +368,7 @@ U 1 1 5F458878
 P 2100 5125
 F 0 "U7" H 2100 5880 50  0000 C CNN
 F 1 "NCP692MN18T2G" H 2100 5789 50  0000 C CNN
-F 2 ".Connector:NCP692MN50T2G" H 2100 5525 50  0001 C CNN
+F 2 ".Package_QFN:NCP692MN50T2G" H 2100 5525 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NCP690-D.PDF" H 2100 5525 50  0001 C CNN
 F 4 "Linear Voltage Regulator IC 1 Output 1V8 1A" H 2100 5698 50  0000 C CNN "Description"
 	1    2100 5125
