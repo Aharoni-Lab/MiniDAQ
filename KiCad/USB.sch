@@ -1361,13 +1361,13 @@ Text Label 1675 1125 0    50   ~ 0
 SSDM
 Text Label 1675 1225 0    50   ~ 0
 SSDP
-Text Label 1675 1725 0    50   ~ 0
-SS_TX_M
-Text Label 1675 1825 0    50   ~ 0
-SS_TX_P
-Text Label 1675 1525 0    50   ~ 0
-SS_RX_P
 Text Label 1700 1425 0    50   ~ 0
+SS_TX_M
+Text Label 1700 1525 0    50   ~ 0
+SS_TX_P
+Text Label 1700 1825 0    50   ~ 0
+SS_RX_P
+Text Label 1700 1725 0    50   ~ 0
 SS_RX_M
 $Comp
 L .Device:L_Small L4
@@ -2399,9 +2399,9 @@ Text Label 5525 1150 0    50   ~ 0
 SS_TX_M
 Text Label 5525 1250 0    50   ~ 0
 SS_TX_P
-Text Label 6475 1050 2    50   ~ 0
-SS_RX_P
 Text Label 6475 950  2    50   ~ 0
+SS_RX_P
+Text Label 6450 1050 2    50   ~ 0
 SS_RX_M
 $Comp
 L .Device:C_Small C39
@@ -3355,4 +3355,6 @@ Wire Bus Line
 	6950 4125 6950 4825
 Wire Wire Line
 	775  2350 1225 2350
+Text Notes -3675 575  0    394  ~ 0
+Is swaping RX and TX correct here!!!????
 $EndSCHEMATC
