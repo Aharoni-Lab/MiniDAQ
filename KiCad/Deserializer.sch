@@ -171,30 +171,6 @@ Wire Wire Line
 	3575 5650 3575 5275
 Connection ~ 3575 5275
 $Comp
-L .Device:R_Small_US R9
-U 1 1 5F09F6A6
-P 3050 4775
-F 0 "R9" H 3118 4821 50  0000 L CNN
-F 1 "50" H 3118 4730 50  0000 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 3050 4775 50  0001 C CNN
-F 3 "~" H 3050 4775 50  0001 C CNN
-	1    3050 4775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 4875 3050 5000
-$Comp
-L power:GND #PWR019
-U 1 1 5F0A02E7
-P 3050 5000
-F 0 "#PWR019" H 3050 4750 50  0001 C CNN
-F 1 "GND" H 3055 4827 50  0000 C CNN
-F 2 "" H 3050 5000 50  0001 C CNN
-F 3 "" H 3050 5000 50  0001 C CNN
-	1    3050 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR020
 U 1 1 5F0A1044
 P 4625 5650
@@ -302,84 +278,6 @@ Text Label 5850 4025 0    50   ~ 0
 ROUT10
 Text Label 5850 4125 0    50   ~ 0
 ROUT11
-$Comp
-L .Device:LED_Small_ALT D1
-U 1 1 5F0B0CDC
-P 1975 5895
-F 0 "D1" V 2021 5827 50  0000 R CNN
-F 1 "LED_Small_ALT" V 1930 5827 50  0000 R CNN
-F 2 "LED_SMD:LED_0402_1005Metric" V 1975 5895 50  0001 C CNN
-F 3 "~" V 1975 5895 50  0001 C CNN
-	1    1975 5895
-	0    -1   -1   0   
-$EndComp
-$Comp
-L .Transistor:MMBT3904LP-7B Q1
-U 1 1 5F0B0CE2
-P 1875 6695
-F 0 "Q1" H 2066 6741 50  0000 L CNN
-F 1 "MMBT3904LP-7B" H 2066 6650 50  0000 L CNN
-F 2 ".Transistor:TRXDFN3_101X61X53L25X15N" H 2075 6620 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31835.pdf" H 1875 6695 50  0001 L CNN
-	1    1875 6695
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1975 6270 1975 6495
-Wire Wire Line
-	1675 6695 1550 6695
-Wire Wire Line
-	1975 6895 1975 6995
-$Comp
-L power:+5V #PWR021
-U 1 1 5F0B4C67
-P 1975 5695
-F 0 "#PWR021" H 1975 5545 50  0001 C CNN
-F 1 "+5V" H 1990 5868 50  0000 C CNN
-F 2 "" H 1975 5695 50  0001 C CNN
-F 3 "" H 1975 5695 50  0001 C CNN
-	1    1975 5695
-	1    0    0    -1  
-$EndComp
-$Comp
-L .Device:R_Small_US R10
-U 1 1 5F0B7229
-P 1975 6170
-F 0 "R10" H 2043 6216 50  0000 L CNN
-F 1 "2k" H 2043 6125 50  0000 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 1975 6170 50  0001 C CNN
-F 3 "~" H 1975 6170 50  0001 C CNN
-	1    1975 6170
-	1    0    0    -1  
-$EndComp
-$Comp
-L .Device:R_Small_US R11
-U 1 1 5F0B89B0
-P 1450 6695
-F 0 "R11" V 1245 6695 50  0000 C CNN
-F 1 "2K" V 1336 6695 50  0000 C CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 1450 6695 50  0001 C CNN
-F 3 "~" H 1450 6695 50  0001 C CNN
-	1    1450 6695
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1350 6695 1050 6695
-Text Label 1050 6695 0    50   ~ 0
-LOCK
-$Comp
-L power:GND #PWR022
-U 1 1 5F0B9C95
-P 1975 6995
-F 0 "#PWR022" H 1975 6745 50  0001 C CNN
-F 1 "GND" H 1980 6822 50  0000 C CNN
-F 2 "" H 1975 6995 50  0001 C CNN
-F 3 "" H 1975 6995 50  0001 C CNN
-	1    1975 6995
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1975 6070 1975 5995
 $Comp
 L .Device:C_Small C4
 U 1 1 5F0BE99E
@@ -1258,14 +1156,32 @@ Wire Wire Line
 	1225 2500 975  2500
 Wire Wire Line
 	3625 5075 3250 5075
-Wire Wire Line
-	3050 4675 3625 4675
 Text Label 3250 5075 0    50   ~ 0
 LOCK
 Text Notes 3225 1150 0    394  ~ 0
 CHECK EVERYTHING!
-Wire Wire Line
-	1975 5695 1975 5795
+Text HLabel 3250 5075 0    50   Output ~ 0
+LOCK
+Text Notes 1675 4225 0    79   ~ 0
+MISSING SEL!
 Wire Bus Line
 	6250 3125 6250 4225
+Text Notes 1750 4625 0    79   ~ 0
+I removed the 50ohm res on CMLOUTP
+Text Label 5875 4825 0    50   ~ 0
+GPIO3
+Text Label 5900 4725 0    50   ~ 0
+GPIO2
+Text Label 5875 4625 0    50   ~ 0
+GPIO1
+Text Label 5875 4525 0    50   ~ 0
+GPIO0
+Text HLabel 6150 4525 2    79   Input ~ 0
+GPIO0
+Text HLabel 6150 4625 2    79   Input ~ 0
+GPIO1
+Text HLabel 6150 4725 2    79   Input ~ 0
+GPIO2
+Text HLabel 6150 4825 2    79   Input ~ 0
+GPIO3
 $EndSCHEMATC

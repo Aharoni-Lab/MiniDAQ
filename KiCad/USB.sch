@@ -1358,17 +1358,17 @@ Wire Wire Line
 Wire Wire Line
 	1475 1525 2050 1525
 Text Label 1675 1125 0    50   ~ 0
-SSDM
+SSD_N
 Text Label 1675 1225 0    50   ~ 0
-SSDP
+SSD_P
 Text Label 1700 1425 0    50   ~ 0
-SS_TX_M
+SS_TX_N
 Text Label 1700 1525 0    50   ~ 0
 SS_TX_P
 Text Label 1700 1825 0    50   ~ 0
 SS_RX_P
 Text Label 1700 1725 0    50   ~ 0
-SS_RX_M
+SS_RX_N
 $Comp
 L .Device:L_Small L4
 U 1 1 5F1B204C
@@ -2251,12 +2251,12 @@ $EndComp
 $Comp
 L .Interface:CYUSB3014 U4
 U 6 1 5F0BA739
-P 5280 11325
-F 0 "U4" H 5310 14735 50  0000 C CNN
-F 1 "CYUSB3014" H 5310 14644 50  0000 C CNN
-F 2 ".Interface:BGA121CP80_11X11_1000X1000X120B30" H 5267 14892 50  0001 C CNN
-F 3 "https://www.cypress.com/file/140296/download" H 5249 12948 50  0001 C CNN
-	6    5280 11325
+P 5275 11350
+F 0 "U4" H 5305 14760 50  0000 C CNN
+F 1 "CYUSB3014" H 5305 14669 50  0000 C CNN
+F 2 ".Interface:BGA121CP80_11X11_1000X1000X120B30" H 5262 14917 50  0001 C CNN
+F 3 "https://www.cypress.com/file/140296/download" H 5244 12973 50  0001 C CNN
+	6    5275 11350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2290,11 +2290,11 @@ Wire Wire Line
 Wire Wire Line
 	2880 2010 2555 2010
 Text Label 2555 1710 0    50   ~ 0
-SS_TX_M
+SS_TX_N
 Text Label 2555 1810 0    50   ~ 0
 SS_TX_P
 Text Label 2555 1910 0    50   ~ 0
-SS_RX_M
+SS_RX_N
 Text Label 2555 2010 0    50   ~ 0
 SS_RX_P
 Wire Wire Line
@@ -2378,11 +2378,11 @@ Wire Wire Line
 Wire Wire Line
 	3755 2010 3430 2010
 Text Label 3430 1710 0    50   ~ 0
-SS_TX_M
+SS_TX_N
 Text Label 3430 1810 0    50   ~ 0
 SS_TX_P
 Text Label 3430 1910 0    50   ~ 0
-SS_RX_M
+SS_RX_N
 Text Label 3430 2010 0    50   ~ 0
 SS_RX_P
 Wire Wire Line
@@ -2392,17 +2392,17 @@ Wire Wire Line
 Wire Wire Line
 	6100 1750 6675 1750
 Text Label 6475 1650 2    50   ~ 0
-SSDM
+SSD_N
 Text Label 6475 1550 2    50   ~ 0
-SSDP
+SSD_P
 Text Label 5525 1150 0    50   ~ 0
-SS_TX_M
+SS_TX_N
 Text Label 5525 1250 0    50   ~ 0
 SS_TX_P
 Text Label 6475 950  2    50   ~ 0
 SS_RX_P
 Text Label 6450 1050 2    50   ~ 0
-SS_RX_M
+SS_RX_N
 $Comp
 L .Device:C_Small C39
 U 1 1 5F23FB93
@@ -2910,8 +2910,6 @@ Wire Wire Line
 	8645 3000 8295 3000
 Connection ~ 12465 1760
 Wire Wire Line
-	5925 7025 6250 7025
-Wire Wire Line
 	5925 7125 6250 7125
 Wire Wire Line
 	5925 7225 6250 7225
@@ -2966,51 +2964,31 @@ Wire Wire Line
 Text HLabel 6850 5625 2    50   Input ~ 0
 PCLK
 Wire Wire Line
-	5925 5425 5925 5325
+	6850 4925 7125 4925
 Wire Wire Line
-	5925 4825 6200 4825
-Wire Wire Line
-	6200 4825 6200 4900
-Connection ~ 5925 4825
-Connection ~ 5925 4925
-Wire Wire Line
-	5925 4925 5925 4825
-Connection ~ 5925 5025
-Wire Wire Line
-	5925 5025 5925 4925
-Connection ~ 5925 5125
-Wire Wire Line
-	5925 5125 5925 5025
-Connection ~ 5925 5225
-Wire Wire Line
-	5925 5225 5925 5125
-Connection ~ 5925 5325
-Wire Wire Line
-	5925 5325 5925 5225
+	7125 4925 7125 5000
 $Comp
 L power:GND #PWR058
 U 1 1 5FBD3291
-P 6200 4900
-F 0 "#PWR058" H 6200 4650 50  0001 C CNN
-F 1 "GND" H 6205 4727 50  0000 C CNN
-F 2 "" H 6200 4900 50  0001 C CNN
-F 3 "" H 6200 4900 50  0001 C CNN
-	1    6200 4900
+P 7125 5000
+F 0 "#PWR058" H 7125 4750 50  0001 C CNN
+F 1 "GND" H 7130 4827 50  0000 C CNN
+F 2 "" H 7125 5000 50  0001 C CNN
+F 3 "" H 7125 5000 50  0001 C CNN
+	1    7125 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5925 5525 6200 5525
-Wire Wire Line
-	6200 5525 6200 5350
+	7125 5525 7125 5450
 $Comp
 L power:+1V8 #PWR059
 U 1 1 5FBE7D44
-P 6200 5350
-F 0 "#PWR059" H 6200 5200 50  0001 C CNN
-F 1 "+1V8" H 6215 5523 50  0000 C CNN
-F 2 "" H 6200 5350 50  0001 C CNN
-F 3 "" H 6200 5350 50  0001 C CNN
-	1    6200 5350
+P 7125 5450
+F 0 "#PWR059" H 7125 5300 50  0001 C CNN
+F 1 "+1V8" H 7140 5623 50  0000 C CNN
+F 2 "" H 7125 5450 50  0001 C CNN
+F 3 "" H 7125 5450 50  0001 C CNN
+	1    7125 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3173,21 +3151,13 @@ Text HLabel 7125 4825 2    50   Input ~ 0
 ROUT[0..11]
 Text Notes 6150 6500 1    50   ~ 0
 Add any GPIO?
-Wire Wire Line
-	5780 10625 6330 10625
-Wire Wire Line
-	5780 10525 6330 10525
-Wire Wire Line
-	5780 10425 6330 10425
-Wire Wire Line
-	5780 10325 6330 10325
-Text Label 5980 10325 0    50   ~ 0
+Text Label 5975 10350 0    50   ~ 0
 SPI_SCK
-Text Label 5980 10425 0    50   ~ 0
+Text Label 5975 10450 0    50   ~ 0
 SPI_nCS
-Text Label 5980 10525 0    50   ~ 0
+Text Label 5975 10550 0    50   ~ 0
 SPI_MISO
-Text Label 5980 10625 0    50   ~ 0
+Text Label 5975 10650 0    50   ~ 0
 SPI_MOSI
 Wire Wire Line
 	12465 2360 12465 2460
@@ -3261,7 +3231,7 @@ Connection ~ 10845 3000
 Wire Wire Line
 	10845 3875 10970 3875
 Connection ~ 10845 3875
-Text Notes 6955 5265 0    118  ~ 0
+Text Notes 7825 5525 0    118  ~ 0
 What about ROUT1,ROUT10,ROUT11?
 Wire Wire Line
 	12305 1160 12305 1260
@@ -3351,10 +3321,388 @@ F 3 "~" H 1125 1425 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	775  2025 775  2350
-Wire Bus Line
-	6950 4125 6950 4825
 Wire Wire Line
 	775  2350 1225 2350
 Text Notes -3675 575  0    394  ~ 0
 Is swaping RX and TX correct here!!!????
+Text Label 6425 1150 0    50   ~ 0
+TX_N
+Text Label 6425 1250 0    50   ~ 0
+TX_P
+$Comp
+L .Transistor:MMBT3904LP-7B Q?
+U 1 1 5F4FD09A
+P 16000 2525
+AR Path="/5F0923DD/5F4FD09A" Ref="Q?"  Part="1" 
+AR Path="/5F0923B1/5F4FD09A" Ref="Q1"  Part="1" 
+F 0 "Q1" H 16191 2571 50  0000 L CNN
+F 1 "MMBT3904LP-7B" H 15375 2395 50  0000 L CNN
+F 2 ".Transistor:TRXDFN3_101X61X53L25X15N" H 16200 2450 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31835.pdf" H 16000 2525 50  0001 L CNN
+	1    16000 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Device:R_Small_US R?
+U 1 1 5F4FD0A0
+P 15625 2525
+AR Path="/5F0923DD/5F4FD0A0" Ref="R?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0A0" Ref="R31"  Part="1" 
+F 0 "R31" V 15420 2525 50  0000 C CNN
+F 1 "2K" V 15511 2525 50  0000 C CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 15625 2525 50  0001 C CNN
+F 3 "~" H 15625 2525 50  0001 C CNN
+	1    15625 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L .LED:LTST-C155GEKT D?
+U 1 1 5F4FD0A6
+P 16200 1500
+AR Path="/5F0923DD/5F4FD0A6" Ref="D?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0A6" Ref="D1"  Part="1" 
+F 0 "D1" V 16154 1788 50  0000 L CNN
+F 1 "LTST-C155GEKT" V 16245 1788 50  0000 L CNN
+F 2 ".LED:LED_4_P138_270X320X110L50X90N" H 16230 1500 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C155GEKT.pdf" H 16230 1500 50  0001 C CNN
+	1    16200 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4FD0AC
+P 16100 1050
+AR Path="/5F0923DD/5F4FD0AC" Ref="#PWR?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0AC" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 16100 900 50  0001 C CNN
+F 1 "+5V" H 16115 1223 50  0000 C CNN
+F 2 "" H 16100 1050 50  0001 C CNN
+F 3 "" H 16100 1050 50  0001 C CNN
+	1    16100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16100 1200 16100 1150
+Wire Wire Line
+	16100 1150 16300 1150
+Wire Wire Line
+	16300 1150 16300 1200
+Connection ~ 16100 1150
+Wire Wire Line
+	16100 1150 16100 1050
+$Comp
+L .Device:R_Small_US R?
+U 1 1 5F4FD0B7
+P 16100 2050
+AR Path="/5F0923DD/5F4FD0B7" Ref="R?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0B7" Ref="R10"  Part="1" 
+F 0 "R10" H 16168 2096 50  0000 L CNN
+F 1 "2k" H 16168 2005 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 16100 2050 50  0001 C CNN
+F 3 "~" H 16100 2050 50  0001 C CNN
+	1    16100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Device:R_Small_US R?
+U 1 1 5F4FD0BD
+P 16300 2050
+AR Path="/5F0923DD/5F4FD0BD" Ref="R?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0BD" Ref="R11"  Part="1" 
+F 0 "R11" H 16368 2096 50  0000 L CNN
+F 1 "2k" H 16368 2005 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 16300 2050 50  0001 C CNN
+F 3 "~" H 16300 2050 50  0001 C CNN
+	1    16300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16100 1800 16100 1950
+Wire Wire Line
+	16300 1800 16300 1950
+$Comp
+L .Device:R_Small_US R?
+U 1 1 5F4FD0C5
+P 16800 2550
+AR Path="/5F0923DD/5F4FD0C5" Ref="R?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0C5" Ref="R32"  Part="1" 
+F 0 "R32" V 16595 2550 50  0000 C CNN
+F 1 "2K" V 16686 2550 50  0000 C CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 16800 2550 50  0001 C CNN
+F 3 "~" H 16800 2550 50  0001 C CNN
+	1    16800 2550
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4FD0CB
+P 16200 2800
+AR Path="/5F0923DD/5F4FD0CB" Ref="#PWR?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0CB" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 16200 2550 50  0001 C CNN
+F 1 "GND" H 16205 2627 50  0000 C CNN
+F 2 "" H 16200 2800 50  0001 C CNN
+F 3 "" H 16200 2800 50  0001 C CNN
+	1    16200 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16100 2325 16100 2150
+Wire Wire Line
+	16300 2350 16300 2150
+Wire Wire Line
+	16600 2550 16700 2550
+Wire Wire Line
+	16900 2550 17100 2550
+Wire Wire Line
+	15725 2525 15800 2525
+Wire Wire Line
+	15525 2525 15300 2525
+$Comp
+L .Transistor:MMBT3904LP-7B Q?
+U 1 1 5F4FD0D7
+P 16400 2550
+AR Path="/5F0923DD/5F4FD0D7" Ref="Q?"  Part="1" 
+AR Path="/5F0923B1/5F4FD0D7" Ref="Q2"  Part="1" 
+F 0 "Q2" H 16591 2596 50  0000 L CNN
+F 1 "MMBT3904LP-7B" H 15750 2345 50  0000 L CNN
+F 2 ".Transistor:TRXDFN3_101X61X53L25X15N" H 16600 2475 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31835.pdf" H 16400 2550 50  0001 L CNN
+	1    16400 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16100 2725 16100 2800
+Wire Wire Line
+	16100 2800 16200 2800
+Wire Wire Line
+	16300 2800 16300 2750
+Connection ~ 16200 2800
+Wire Wire Line
+	16200 2800 16300 2800
+Text Label 15300 2525 0    50   ~ 0
+STATUS
+Text Notes 16275 1075 0    79   ~ 0
+CHECK COLOR
+Text HLabel 6850 6725 2    50   Input ~ 0
+LOCK
+Wire Wire Line
+	5925 6725 6850 6725
+Wire Wire Line
+	5925 6625 6850 6625
+Text Label 6375 6625 0    50   ~ 0
+LOCK_OUT
+Text Label 16975 2550 0    50   ~ 0
+LOCK_OUT
+Text Label 6400 6525 0    50   ~ 0
+STATUS
+Wire Wire Line
+	5925 6525 6850 6525
+Text Notes 6000 7675 0    79   ~ 0
+PMODE[2:0]\nUSB Boot: F11\nI2C then USB: F1F
+$Comp
+L power:+1V8 #PWR0103
+U 1 1 5F660815
+P 6650 7125
+F 0 "#PWR0103" H 6650 6975 50  0001 C CNN
+F 1 "+1V8" H 6665 7298 50  0000 C CNN
+F 2 "" H 6650 7125 50  0001 C CNN
+F 3 "" H 6650 7125 50  0001 C CNN
+	1    6650 7125
+	0    1    1    0   
+$EndComp
+$Comp
+L .Device:R_Small_US R29
+U 1 1 5F666A02
+P 6350 7125
+F 0 "R29" V 6300 7000 50  0000 L CNN
+F 1 "10K" V 6400 7200 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6350 7125 50  0001 C CNN
+F 3 "~" H 6350 7125 50  0001 C CNN
+	1    6350 7125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 7125 6650 7125
+Wire Wire Line
+	5925 7025 6250 7025
+$Comp
+L power:+1V8 #PWR0104
+U 1 1 5F6A22C8
+P 6650 7025
+F 0 "#PWR0104" H 6650 6875 50  0001 C CNN
+F 1 "+1V8" H 6665 7198 50  0000 C CNN
+F 2 "" H 6650 7025 50  0001 C CNN
+F 3 "" H 6650 7025 50  0001 C CNN
+	1    6650 7025
+	0    1    1    0   
+$EndComp
+$Comp
+L .Device:R_Small_US R9
+U 1 1 5F6A22CE
+P 6350 7025
+F 0 "R9" V 6300 6900 50  0000 L CNN
+F 1 "DNL" V 6400 7100 50  0000 L CNN
+F 2 ".Resistor:R_0402_1005Metric_ERJ_L" H 6350 7025 50  0001 C CNN
+F 3 "~" H 6350 7025 50  0001 C CNN
+	1    6350 7025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 7025 6650 7025
+$Comp
+L .Device:R_Small_US R34
+U 1 1 5F71FA15
+P 6350 4925
+F 0 "R34" V 6300 4800 50  0000 L CNN
+F 1 "22" V 6400 5000 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6350 4925 50  0001 C CNN
+F 3 "~" H 6350 4925 50  0001 C CNN
+	1    6350 4925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 4925 6250 4925
+$Comp
+L .Device:R_Small_US R33
+U 1 1 5F71FA1C
+P 6450 4825
+F 0 "R33" V 6400 4700 50  0000 L CNN
+F 1 "22" V 6500 4900 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6450 4825 50  0001 C CNN
+F 3 "~" H 6450 4825 50  0001 C CNN
+	1    6450 4825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 4825 6350 4825
+Wire Wire Line
+	6550 4825 6850 4825
+Wire Wire Line
+	6450 4925 6850 4925
+$Comp
+L .Device:R_Small_US R36
+U 1 1 5F71FA25
+P 6350 5125
+F 0 "R36" V 6300 5000 50  0000 L CNN
+F 1 "22" V 6400 5200 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6350 5125 50  0001 C CNN
+F 3 "~" H 6350 5125 50  0001 C CNN
+	1    6350 5125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 5125 6250 5125
+$Comp
+L .Device:R_Small_US R35
+U 1 1 5F71FA2C
+P 6450 5025
+F 0 "R35" V 6400 4900 50  0000 L CNN
+F 1 "22" V 6500 5100 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6450 5025 50  0001 C CNN
+F 3 "~" H 6450 5025 50  0001 C CNN
+	1    6450 5025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 5025 6350 5025
+Wire Wire Line
+	6550 5025 6850 5025
+Wire Wire Line
+	6450 5125 6850 5125
+$Comp
+L .Device:R_Small_US R38
+U 1 1 5F71FA35
+P 6350 5325
+F 0 "R38" V 6300 5200 50  0000 L CNN
+F 1 "22" V 6400 5400 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6350 5325 50  0001 C CNN
+F 3 "~" H 6350 5325 50  0001 C CNN
+	1    6350 5325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 5325 6250 5325
+$Comp
+L .Device:R_Small_US R37
+U 1 1 5F71FA3C
+P 6450 5225
+F 0 "R37" V 6400 5100 50  0000 L CNN
+F 1 "22" V 6500 5300 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6450 5225 50  0001 C CNN
+F 3 "~" H 6450 5225 50  0001 C CNN
+	1    6450 5225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 5225 6350 5225
+Wire Wire Line
+	6550 5225 6850 5225
+Wire Wire Line
+	6450 5325 6850 5325
+$Comp
+L .Device:R_Small_US R40
+U 1 1 5F71FA45
+P 6350 5525
+F 0 "R40" V 6300 5400 50  0000 L CNN
+F 1 "22" V 6400 5600 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6350 5525 50  0001 C CNN
+F 3 "~" H 6350 5525 50  0001 C CNN
+	1    6350 5525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 5525 6250 5525
+$Comp
+L .Device:R_Small_US R39
+U 1 1 5F71FA4C
+P 6450 5425
+F 0 "R39" V 6400 5300 50  0000 L CNN
+F 1 "22" V 6500 5500 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 6450 5425 50  0001 C CNN
+F 3 "~" H 6450 5425 50  0001 C CNN
+	1    6450 5425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 5425 6350 5425
+Wire Wire Line
+	6550 5425 6850 5425
+Wire Wire Line
+	6850 4825 6850 4925
+Connection ~ 6850 4925
+Wire Wire Line
+	6850 4925 6850 5025
+Connection ~ 6850 5025
+Wire Wire Line
+	6850 5025 6850 5125
+Connection ~ 6850 5125
+Wire Wire Line
+	6850 5125 6850 5225
+Connection ~ 6850 5225
+Wire Wire Line
+	6850 5225 6850 5325
+Connection ~ 6850 5325
+Wire Wire Line
+	6850 5325 6850 5425
+Wire Wire Line
+	6450 5525 7125 5525
+Text HLabel 6325 10350 2    79   Output ~ 0
+SPI_SCK
+Text HLabel 6325 10450 2    79   Output ~ 0
+SPI_nCS
+Text HLabel 6325 10550 2    79   Input ~ 0
+SPI_MISO
+Text HLabel 6325 10650 2    79   Output ~ 0
+SPI_MOSI
+Wire Wire Line
+	5775 10650 6325 10650
+Wire Wire Line
+	5775 10550 6325 10550
+Wire Wire Line
+	5775 10450 6325 10450
+Wire Wire Line
+	5775 10350 6325 10350
+Wire Bus Line
+	6950 4125 6950 4825
 $EndSCHEMATC
