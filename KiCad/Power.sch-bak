@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
-Rev ""
+Title "MiniDAQ"
+Date "2020-07-15"
+Rev "v0.1"
 Comp ""
-Comment1 ""
+Comment1 "Daniel Aharoni"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -21,6 +21,8 @@ F 0 "J2" H 1118 1538 50  0000 C CNN
 F 1 "SMA-J-P-H-ST-EM1" H 1118 1447 50  0000 C CNN
 F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount" H 1190 1300 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/sma.pdf" H 1190 1300 50  0001 C CNN
+F 4 "SMA-J-P-H-ST-EM1" H 1190 1300 50  0001 C CNN "Description"
+F 5 "SMA-J-P-H-ST-EM1" H 1190 1300 50  0001 C CNN "Part Number"
 	1    1190 1300
 	-1   0    0    -1  
 $EndComp
@@ -58,6 +60,8 @@ F 2 ".Inductor:L_0603_1608Metric_L" H 1890 1600 50  0001 C CNN
 F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 1840 1300 50  0001 C CNN
 F 4 "470 Ohms @ 100MHz" V 1740 1200 50  0000 C CNN "Note"
 F 5 "0603" H 1990 1050 50  0001 C CNN "Size"
+F 6 "BLM18PG471SN1D" H 1840 1300 50  0001 C CNN "Description"
+F 7 "BLM18PG471SN1D" H 1840 1300 50  0001 C CNN "Part Number"
 	1    1840 1300
 	0    -1   -1   0   
 $EndComp
@@ -71,6 +75,8 @@ F 2 ".Inductor:L_1210_3225Metric_L" H 2495 1240 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_automotive_decoupling_adl3225v_en.pdf" H 2565 1300 50  0001 C CNN
 F 4 "47uH" V 2659 1300 50  0000 C CNN "Note"
 F 5 "1210" H 2715 1050 50  0001 C CNN "Size"
+F 6 "ADL3225V-470MT-TL000" H 2565 1300 50  0001 C CNN "Description"
+F 7 "ADL3225V-470MT-TL000" H 2565 1300 50  0001 C CNN "Part Number"
 	1    2565 1300
 	0    -1   -1   0   
 $EndComp
@@ -93,6 +99,8 @@ F 0 "R30" V 2640 1525 50  0000 L CNN
 F 1 "2K" V 2465 1525 50  0000 L CNN
 F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 2565 1575 50  0001 C CNN
 F 3 "~" H 2565 1575 50  0001 C CNN
+F 4 "ERJ-1GNF2001C" H 2565 1575 50  0001 C CNN "Description"
+F 5 "ERJ-1GNF2001C" H 2565 1575 50  0001 C CNN "Part Number"
 	1    2565 1575
 	0    -1   -1   0   
 $EndComp
@@ -115,6 +123,8 @@ F 0 "C73" H 2982 1471 50  0000 L CNN
 F 1 "10uF" H 2982 1380 50  0000 L CNN
 F 2 ".Capacitor:C_0402_1005Metric_L" H 2890 1425 50  0001 C CNN
 F 3 "~" H 2890 1425 50  0001 C CNN
+F 4 "CC0402MRX5R5BB106" H 2890 1425 50  0001 C CNN "Description"
+F 5 "CC0402MRX5R5BB106" H 2890 1425 50  0001 C CNN "Part Number"
 	1    2890 1425
 	1    0    0    -1  
 $EndComp
@@ -131,6 +141,8 @@ F 0 "C74" H 3357 1471 50  0000 L CNN
 F 1 "0.1uF" H 3357 1380 50  0000 L CNN
 F 2 ".Capacitor:C_0201_0603Metric_L" H 3265 1425 50  0001 C CNN
 F 3 "~" H 3265 1425 50  0001 C CNN
+F 4 "CC0201KRX5R6BB104" H 3265 1425 50  0001 C CNN "Description"
+F 5 "CC0201KRX5R6BB104" H 3265 1425 50  0001 C CNN "Part Number"
 	1    3265 1425
 	1    0    0    -1  
 $EndComp
@@ -176,6 +188,8 @@ F 0 "U6" H 1775 3395 50  0000 C CNN
 F 1 "SC189CULTRT" H 1775 3304 50  0000 C CNN
 F 2 ".Package_SON:SON_7P50_200X200X57L35X24T170X80N" H 1575 3280 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/761/sc189-1366204.pdf" H 1575 3280 50  0001 C CNN
+F 4 "SC189CULTRT" H 1775 3080 50  0001 C CNN "Description"
+F 5 "SC189CULTRT" H 1775 3080 50  0001 C CNN "Part Number"
 	1    1775 3080
 	1    0    0    -1  
 $EndComp
@@ -209,6 +223,8 @@ F 0 "C75" H 1167 3176 50  0000 L CNN
 F 1 "10uF" H 1167 3085 50  0000 L CNN
 F 2 ".Capacitor:C_0402_1005Metric_L" H 1075 3130 50  0001 C CNN
 F 3 "~" H 1075 3130 50  0001 C CNN
+F 4 "CC0402MRX5R5BB106" H 1075 3130 50  0001 C CNN "Description"
+F 5 "CC0402MRX5R5BB106" H 1075 3130 50  0001 C CNN "Part Number"
 	1    1075 3130
 	1    0    0    -1  
 $EndComp
@@ -252,6 +268,8 @@ F 0 "C76" H 2942 3326 50  0000 L CNN
 F 1 "22uF" H 2942 3235 50  0000 L CNN
 F 2 ".Capacitor:C_0402_1005Metric_L" H 2850 3280 50  0001 C CNN
 F 3 "~" H 2850 3280 50  0001 C CNN
+F 4 "CL05A226MQ5N6J8" H 2850 3280 50  0001 C CNN "Description"
+F 5 "CL05A226MQ5N6J8" H 2850 3280 50  0001 C CNN "Part Number"
 	1    2850 3280
 	1    0    0    -1  
 $EndComp
@@ -263,6 +281,8 @@ F 0 "L12" V 2760 3030 50  0000 C CNN
 F 1 "LQM2HPN1R0MG0" V 2669 3030 50  0000 C CNN
 F 2 ".Inductor:L_1008_2520Metric_L" H 2575 3030 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/JELF243B-0019-1634195.pdf" H 2575 3030 50  0001 C CNN
+F 4 "LQM2HPN1R0MG0" H 2575 3030 50  0001 C CNN "Description"
+F 5 "LQM2HPN1R0MG0" H 2575 3030 50  0001 C CNN "Part Number"
 	1    2575 3030
 	0    -1   -1   0   
 $EndComp
@@ -317,7 +337,8 @@ F 0 "U7" H 2100 5880 50  0000 C CNN
 F 1 "NCP692MN18T2G" H 2100 5789 50  0000 C CNN
 F 2 ".Package_QFN:NCP692MN50T2G" H 2100 5525 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NCP690-D.PDF" H 2100 5525 50  0001 C CNN
-F 4 "Linear Voltage Regulator IC 1 Output 1V8 1A" H 2100 5698 50  0000 C CNN "Description"
+F 4 "NCP692MN18T2G" H 2100 5698 50  0000 C CNN "Description"
+F 5 "NCP692MN18T2G" H 2100 5125 50  0001 C CNN "Part Number"
 	1    2100 5125
 	1    0    0    -1  
 $EndComp
@@ -329,6 +350,8 @@ F 0 "C77" H 1067 4996 50  0000 L CNN
 F 1 "1uF" H 1067 4905 50  0000 L CNN
 F 2 ".Capacitor:C_0201_0603Metric_L" H 975 4950 50  0001 C CNN
 F 3 "~" H 975 4950 50  0001 C CNN
+F 4 "CC0201MRX5R5BB105" H 975 4950 50  0001 C CNN "Description"
+F 5 "CC0201MRX5R5BB105" H 975 4950 50  0001 C CNN "Part Number"
 	1    975  4950
 	1    0    0    -1  
 $EndComp
@@ -340,6 +363,8 @@ F 0 "C78" H 3242 4996 50  0000 L CNN
 F 1 "1uF" H 3242 4905 50  0000 L CNN
 F 2 ".Capacitor:C_0201_0603Metric_L" H 3150 4950 50  0001 C CNN
 F 3 "~" H 3150 4950 50  0001 C CNN
+F 4 "CC0201MRX5R5BB105" H 3150 4950 50  0001 C CNN "Description"
+F 5 "CC0201MRX5R5BB105" H 3150 4950 50  0001 C CNN "Part Number"
 	1    3150 4950
 	1    0    0    -1  
 $EndComp
