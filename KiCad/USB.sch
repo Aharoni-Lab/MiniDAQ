@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 3 4
 Title "MiniDAQ"
-Date "2020-07-15"
-Rev "v0.1"
+Date "2020-09-01"
+Rev "v1.0"
 Comp ""
 Comment1 "Daniel Aharoni"
 Comment2 ""
